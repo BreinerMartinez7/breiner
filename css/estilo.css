@@ -4,9 +4,9 @@
 
 /* variables de marca es decir las generales*/
 :root {/* es la raiz del documento las variables declaradas aqui sirven para toda la pagina*/
-    --sena-verde: #e5ff00;/*toda variable inicia con -- el color esta en hexadecimal pero lo podemos colocar en texto*/
-    --sena-verde-oscuro: #0011ff;
-    --sena-azul:#fa0303;
+    --sena-verde: #39a900;/*toda variable inicia con -- el color esta en hexadecimal pero lo podemos colocar en texto*/
+    --sena-verde-oscuro: #2e8700;
+    --sena-azul:#00324d;
     --sidebar-ancho: 250px;/*ancho del menu lateral px es la unidad*/
 
 }
@@ -16,9 +16,9 @@ body {/* afecta a todo el cuerpo de la pagina*/
     font-family: "segoe UI", Roboto, arial, sans-serif;/*tipos de letra si no existe pasa a la siguiente*/
 }
 /*texto verde */
-.texto-sena {
+.text-sena {
     /*Usa la variable de marca*/
-    color: var(--sena-verde)
+    color: var(--sena-verde);
 }
     /*boton con los colores del sena usando las variables de bootsatrapm */
 /*se usa junto a btn: class="btn btn-sena" */
@@ -30,17 +30,17 @@ body {/* afecta a todo el cuerpo de la pagina*/
     /*color de borde*/
     --bs-btn-border-color: var(--sena-verde);
     /*texto con el mouse arriba*/
-    --bs-btn--hover-color: #fff;
+    --bs-btn-hover-color: #fff;
     /*fondo con el mouse encima*/
     --bs-btn-hover-bg: var(--sena-verde-oscuro);
     /*borde con el mouse encima*/
-    --bs-btn--border-color: var(--sena-verde-oscuro);
+    --bs-btn-hover-border-color: var(--sena-verde-oscuro);
     /*texto mientras se hace clic*/
-    --bs--btn--active-color: #fff;
+    --bs-btn-active-color: #fff;
     /*fondo mientras se hace clic*/
-    --bts-btn-active-bg: var(--sena-verde-oscuro);
+    --bs-btn-active-bg: var(--sena-verde-oscuro);
     /*borde mientras se hace clic*/
-    --bts-btn-active-border-color: var(--sena-verde-oscuro);
+    --bs-btn-active-border-color: var(--sena-verde-oscuro);
     /*cierra la regla*/
 }
 /* la coma aplica la misma regla a varios selectores: los campos con el foco*/
@@ -52,7 +52,7 @@ body {/* afecta a todo el cuerpo de la pagina*/
     /*borde verde en lugar del azul de bootstrap*/
     border-color: var(--sena-verde);
     /*hazlo verde traslucido al rededor del campo*/
-    box-shadow: 0 0 .25rem rgba(57, 169, 0, .25);
+    box-shadow: 0 0 0 .25rem rgba(57, 169, 0, .25);
     /*cierre  la regla*/
 }
 
@@ -225,7 +225,7 @@ body {/* afecta a todo el cuerpo de la pagina*/
         /*la sube 4px efecto de levantarse*/
         transform: translateY(-4px);
         /*sombra mas marcada (!important para ganarle al shadow-sm*/
-        box-shadow: 0 .5rem rgba(0, 0, 0, .12)!important;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .12)!important;
     }
 
     /*cuadro el color que contiene el icono de la tarjeta*/
@@ -268,7 +268,7 @@ body {/* afecta a todo el cuerpo de la pagina*/
     }
 
     /*tarjeta punteada que invita a crear una categoria nueva */
-    .tajeta-agregar {
+    .tarjeta-agregar {
         border: 2px dashed #ced4da;
         background-color: transparent;
         color: #6c757d;

@@ -232,7 +232,7 @@ body {
 
 /* ---------- 5. Panel: tarjetas de indicadores ---------- */
 /* Tarjetas con números del dashboard (KPI = indicador clave). */
-.tarjeta-kpi {
+.tarjetas-kpi {
     /* Sin borde general… */
     border: 0;
     /* …excepto una franja verde a la izquierda. */
@@ -243,7 +243,7 @@ body {
 }
 
 /* Tarjeta con el mouse encima. */
-.tarjeta-kpi:hover {
+.tarjetas-kpi:hover {
     /* La sube 4px: efecto de “levantarse”. */
     transform: translateY(-4px);
     /* Sombra más marcada (!important para ganarle a shadow-sm). */
