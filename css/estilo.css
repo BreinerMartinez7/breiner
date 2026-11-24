@@ -7,7 +7,7 @@
     --sena-verde: #e5ff00;/*toda variable inicia con -- el color esta en hexadecimal pero lo podemos colocar en texto*/
     --sena-verde-oscuro: #0011ff;
     --sena-azul:#fa0303;
-    --sidebar-ancho: 250px/*ancho del menu lateral px es la unidad*/
+    --sidebar-ancho: 250px;/*ancho del menu lateral px es la unidad*/
 
 }
 /* variables generales estilos que aplican a todas las paginas*/
@@ -52,7 +52,7 @@ body {/* afecta a todo el cuerpo de la pagina*/
     /*borde verde en lugar del azul de bootstrap*/
     border-color: var(--sena-verde);
     /*hazlo verde traslucido al rededor del campo*/
-    box-shadow: 0 0 0. 25rem rgba(57, 169, 0, .25);
+    box-shadow: 0 0 .25rem rgba(57, 169, 0, .25);
     /*cierre  la regla*/
 }
 
@@ -99,7 +99,7 @@ body {/* afecta a todo el cuerpo de la pagina*/
         /*el ancho incluye el relleno*/
         box-sizing: border-box;
         /*sombra*/
-        box-shadow: 0 1rem 3rem  rgba(0, 0, .25);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .25);
         /* cierre regla*/
     }
 
@@ -193,7 +193,7 @@ body {/* afecta a todo el cuerpo de la pagina*/
            
         }
         /*cuerpo del menu computador*/
-        .siderbar .offcanvas-body{
+        .sidebar .offcanvas-body{
             /*ocupa todo el alto asi el boton cierra sesio queda en el fondo*/
             height: 100%;
             /*si el menu es muy largo aparece la barra de desplazamiento*/
@@ -214,7 +214,7 @@ body {/* afecta a todo el cuerpo de la pagina*/
         /*sin borde general*/
         border: 0;
         /*excepto una franja verde a la izquierda*/
-        border-left: 4px solid var((--sena-verde));
+        border-left: 4px solid var(--sena-verde);
         /*anima 2 segundos el movimiento y la sombre en 0. 2segundos*/
         transition: transform .2s, box-shadow .2s;
 
@@ -262,9 +262,9 @@ body {/* afecta a todo el cuerpo de la pagina*/
     /*color de los numeros*/
     --bs-pagination-color: var(--sena-azul);
     /* fondo de pagina activa*/
-    --bs-pagination-active-bg: var(var(--sena-verde));
+    --bs-pagination-active-bg: var(--sena-verde);
     /*borde de pagina activa*/
-    --bs-pagination-active-border-color: var(var(--sena-verde));
+    --bs-pagination-active-border-color: var(--sena-verde);
     }
 
     /*tarjeta punteada que invita a crear una categoria nueva */
@@ -298,7 +298,7 @@ body {/* afecta a todo el cuerpo de la pagina*/
     /*lista de categorias de la clase*/
     .list-group {
         /*fonde item activo*/
-        --bs-lis-group-active-gb: var(var(--sena-verde));
+        --bs-list-group-active-bg: var(--sena-verde);
         /*borde de item activo*/
-        --bs-list-group-active-border-color: var(var(--sena-verde));
+        --bs-list-group-active-border-color: var(--sena-verde);
     }
